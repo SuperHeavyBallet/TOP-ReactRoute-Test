@@ -1,0 +1,13 @@
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.rowReverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}

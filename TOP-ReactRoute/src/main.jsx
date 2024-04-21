@@ -5,6 +5,7 @@ import './index.css'
 import Root, { loader as rootLoader , action as rootAction, } from './routes/root'
 import ErrorPage from './error-page'
 import Contact from './routes/contact'
+import TestMain from './TestMain'
 
 
 const router = createBrowserRouter([
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       {
         path: "contacts/:contactId",
         element: <Contact />,
+        //<RouterProvider router={router} />
       },
     ]
   },
@@ -25,6 +27,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    
+    <TestMain />
   </React.StrictMode>,
 )
